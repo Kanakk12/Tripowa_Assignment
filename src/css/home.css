@@ -1,0 +1,96 @@
+.aspen {
+  width: 120%; /* Adjust as needed for responsiveness */
+  max-width: 400px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10vh; /* Use relative units for padding */
+  margin-top: -60px;
+}
+
+.plan {
+  width: 120%; /* Adjust as needed for responsiveness */
+  max-width: 380px;
+  height: auto;
+  display: block;
+  margin-top: 120px;
+  margin-right: 250px;
+  padding-top: 5vh; /* Use relative units for padding */
+}
+
+.btn {
+  width: 90%; /* Adjust as needed for responsiveness */
+  max-width: 420px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(0, 81, 255) !important;
+  border: none;
+  border-radius: 16px !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 17px !important;
+  justify-content: center !important;
+  margin-top: 50px;
+}
+
+.btn:hover {
+  background-color: blue !important;
+  font-size: 20px !important;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aspen {
+    width: 90%;
+    padding-top: 10vh;
+  }
+
+  .plan {
+    width: 90%;
+    padding-top: 10vh;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 16px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .aspen {
+    width: 100%; /* Adjust as needed for responsiveness */
+    max-width: 280px;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10vh; /* Use relative units for padding */
+    margin-top: -100px;
+  }
+
+  .plan {
+    width: 100%; /* Adjust as needed for responsiveness */
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin-top: 120px;
+    margin-left: 25px;
+    margin-right: 250px;
+    padding-top: 5vh; /* Use relative units for padding */
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    height: 60px;
+    background-color: rgb(0, 76, 255);
+    padding-top: 12px !important;
+    margin-top: 25px;
+    max-width: 350px;
+  }
+}

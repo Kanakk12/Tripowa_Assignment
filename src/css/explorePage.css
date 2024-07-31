@@ -1,0 +1,587 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+  /* width: 100vw; */
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Adjust width as needed */
+  margin-bottom: 40px; /* Space between rows */
+  margin-top: 100px;
+}
+
+.col1 {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: left;
+  /* align-items: center; */
+  width: 100%; /* Adjust width as needed */
+
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.col2 {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: right;
+  /* align-items: center; */
+  width: 100%; /* Adjust width as needed */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.txt-aspen {
+  max-width: 100%; /* Ensure image fits within column */
+  height: 100%;
+}
+
+.location-dropdown {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.location-icon {
+  color: rgb(0, 60, 255); /* Change this to the desired color for the icon */
+  font-size: 23px;
+}
+
+.dropdown {
+  color: rgba(96, 96, 96, 1); /* Default text color for the dropdown */
+
+  padding: 10px; /* Padding for better appearance */
+  border: none; /* Border for the dropdown */
+  font-size: 20px;
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  -moz-appearance: none; /* Remove default styling in Firefox */
+  position: relative;
+  width: 170px; /* Width of the dropdown */
+  font-weight: 600;
+
+  margin-left: 15px;
+}
+
+.dropdown option {
+  color: rgba(
+    96,
+    96,
+    96,
+    1
+  ); /* Change this to the desired color for the dropdown text */
+  background-color: white; /* Change this to the desired background color for the dropdown options */
+}
+
+.dropdown-txt {
+  color: rgba(
+    96,
+    96,
+    96,
+    1
+  ); /* Change this to the desired color for the option text */
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-wrapper::after {
+  content: "▼"; /* Unicode character for down arrow */
+  color: rgb(0, 42, 255); /* Change this to the desired color for the caret */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevent the caret from interfering with click events */
+}
+
+.form-control-custom {
+  border: none !important;
+  border-radius: 30px !important;
+  padding-left: 45px !important;
+  background-color: rgba(243, 248, 254, 1) !important;
+  height: 60px !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color: rgba(184, 184, 184, 1);
+}
+
+.searchbar {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 40%;
+  width: 100%;
+  height: 52px;
+  border-radius: 30px;
+  /* color: rgba(184, 184, 184, 1); */
+  background-color: rgba(243, 248, 254, 1);
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensures the icon doesn't interfere with input focus */
+  width: 26.75px;
+  height: 26.73px;
+  color: rgba(184, 184, 184, 1);
+  font-weight: 600;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.div-form {
+  width: 906.34px;
+  height: 45px;
+  display: flex;
+  align-items: baseline; /* Align items to baseline */
+  justify-content: space-between;
+}
+.nav-item1 {
+  color: rgb(153, 152, 152);
+  font-weight: 600;
+  font-size: 19px;
+  cursor: pointer;
+}
+.nav-item1:hover {
+  color: rgb(0, 72, 255);
+  background-color: rgba(243, 248, 254, 1);
+  border-radius: 15px;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.popular {
+  font-size: 30px;
+  font-weight: 500;
+  height: 22px;
+}
+
+.see-all {
+  color: rgba(0, 110, 255, 0.952);
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  list-style-type: none; /* Removes the bullets */
+}
+
+.img1 {
+  width: 300px;
+  height: 400px;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.img1:hover {
+  width: 330px;
+  height: 430px;
+}
+.img2 {
+  width: 400px;
+  height: 500px;
+  margin-top: -15px;
+}
+
+.img2:hover {
+  width: 430px;
+  height: 530px;
+}
+
+.img22 {
+  width: 400px;
+  height: 500px;
+  margin-top: -15px;
+}
+
+.img22:hover {
+  width: 430px;
+  height: 530px;
+}
+
+.nav3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  list-style-type: none; /* Removes the bullets */
+  margin-bottom: 171px;
+}
+
+.img3 {
+  width: 500px;
+  height: 480px;
+}
+
+.img4 {
+  width: 500px;
+  /* height: 350px; */
+}
+.last-nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  position: fixed;
+  bottom: 0; /* Positions the element at the top of the viewport */
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.icons {
+  color: rgba(184, 184, 184, 1);
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.icons:hover {
+  color: blue;
+}
+
+.recommended {
+  font-weight: 700;
+  margin-bottom: -15px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .last-nav {
+    height: 60px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .col1 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    /* align-items: center; */
+    width: 100px; /* Adjust width as needed */
+
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  }
+
+  .col2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: right;
+    /* align-items: center; */
+    width: 140%; /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  }
+
+  .txt-aspen {
+    max-width: 100%; /* Ensure image fits within column */
+    height: 100%;
+  }
+
+  .location-dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  .location-icon {
+    color: rgb(0, 60, 255); /* Change this to the desired color for the icon */
+    font-size: 22px;
+  }
+
+  .dropdown {
+    color: rgba(96, 96, 96, 1); /* Default text color for the dropdown */
+
+    padding: 10px; /* Padding for better appearance */
+    border: none; /* Border for the dropdown */
+    font-size: 18px;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    position: none;
+    width: 130px; /* Width of the dropdown */
+    font-weight: 600;
+  }
+  .dropdown-wrapper::after {
+    content: "▼"; /* Unicode character for down arrow */
+    color: rgb(0, 42, 255); /* Change this to the desired color for the caret */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the caret from interfering with click events */
+  }
+
+  .nav-item1 {
+    color: rgb(153, 152, 152);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .nav-item1:hover {
+    color: rgb(0, 72, 255);
+    background-color: rgba(243, 248, 254, 1);
+    border-radius: 15px;
+    width: 80px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    list-style-type: none; /* Removes the bullets */
+  }
+
+  .img1 {
+    width: 200px;
+    height: 300px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .img1:hover {
+    width: 230px;
+    height: 330px;
+  }
+  .img2 {
+    width: 270px;
+    height: 380px;
+    margin-top: -15px;
+  }
+
+  .img2:hover {
+    width: 300px;
+    height: 410px;
+  }
+
+  .img22 {
+    display: none;
+  }
+  .nav3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    list-style-type: none; /* Removes the bullets */
+    margin-bottom: 140px;
+  }
+
+  .img3 {
+    width: 290px;
+    height: 270px;
+    margin-left: -45px;
+  }
+
+  .img4 {
+    width: 260px;
+    height: 270px;
+    margin-left: -35px;
+  }
+  .last-nav {
+    height: auto;
+    flex-direction: row; /* Ensure elements are in a single line */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    padding: 10px;
+    justify-content: space-between;
+    /* font-size: 15px; */
+  }
+  .recommended {
+    font-weight: 700;
+    margin-bottom: -15px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin-top: 30px;
+  }
+}
+
+/* Media query for tablet devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .last-nav {
+    height: auto;
+    flex-direction: row; /* Ensure elements are in a single line */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .col1 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    /* align-items: center; */
+    width: 100px; /* Adjust width as needed */
+
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  }
+
+  .col2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: right;
+    /* align-items: center; */
+    width: 100%; /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+  }
+
+  .txt-aspen {
+    max-width: 100%; /* Ensure image fits within column */
+    height: 100%;
+  }
+
+  .location-dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  .location-icon {
+    color: rgb(0, 60, 255); /* Change this to the desired color for the icon */
+    font-size: 22px;
+  }
+
+  .dropdown {
+    color: rgba(96, 96, 96, 1); /* Default text color for the dropdown */
+
+    padding: 10px; /* Padding for better appearance */
+    border: none; /* Border for the dropdown */
+    font-size: 18px;
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    position: none;
+    width: 140px; /* Width of the dropdown */
+    font-weight: 600;
+  }
+  .dropdown-wrapper::after {
+    content: "▼"; /* Unicode character for down arrow */
+    color: rgb(0, 42, 255); /* Change this to the desired color for the caret */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the caret from interfering with click events */
+  }
+
+  .nav-item1 {
+    color: rgb(153, 152, 152);
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .nav-item1:hover {
+    color: rgb(0, 72, 255);
+    background-color: rgba(243, 248, 254, 1);
+    border-radius: 15px;
+    width: 90px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    list-style-type: none; /* Removes the bullets */
+  }
+
+  .img1 {
+    width: 300px;
+    height: 400px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .img1:hover {
+    width: 330px;
+    height: 430px;
+  }
+  .img2 {
+    width: 370px;
+    height: 480px;
+    margin-top: -15px;
+  }
+
+  .img2:hover {
+    width: 400px;
+    height: 510px;
+  }
+
+  .img22 {
+    display: none;
+  }
+  .nav3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    list-style-type: none; /* Removes the bullets */
+    margin-bottom: 159px;
+  }
+
+  .img3 {
+    width: 390px;
+    height: 370px;
+    margin-left: -45px;
+  }
+
+  .img4 {
+    width: 360px;
+    height: 370px;
+    margin-left: -35px;
+  }
+  .last-nav {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding-left: 0; /* Corrected from 'none' */
+    padding-right: 0; /* Corrected from 'none' */
+    box-sizing: border-box; /* Ensures padding is considered in width */
+  }
+
+  .recommended {
+    font-weight: 700;
+    margin-bottom: -15px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    margin-top: 30px;
+  }
+}
